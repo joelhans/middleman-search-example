@@ -1,0 +1,10 @@
+<%
+blog.articles.each do |article|
+  entry = {
+    :title => article.title, 
+    :url => article.url,
+    :content => article.body
+  }
+  entries << entry
+end
+%><%=entries.to_json %>
