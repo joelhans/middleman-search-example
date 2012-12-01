@@ -1,3 +1,10 @@
+activate :blog do |blog|
+  blog.prefix = "blog"
+  blog.permalink = ":year-:month-:day-:title"
+  blog.layout = "layout"
+  blog.default_extension = ".markdown"
+end
+
 ###
 # Compass
 ###
@@ -10,6 +17,8 @@
 # compass_config do |config|
 #   config.output_style = :compact
 # end
+
+
 
 ###
 # Page options, layouts, aliases and proxies
