@@ -7,7 +7,7 @@ $ ->
     search_term = $('.search-term').val().toLowerCase()
     # Change the following to '/entries.json' to use the real version using your
     # own content.
-    $.getJSON '/entries-example.json', (data) ->
+    $.getJSON 'entries-example.json', (data) ->
       results = []
       for i in data
         value = 0
