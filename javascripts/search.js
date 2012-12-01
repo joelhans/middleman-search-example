@@ -8,7 +8,7 @@
       var search_term;
       e.preventDefault();
       search_term = $('.search-term').val().toLowerCase();
-      return $.getJSON('/entries-example.json', function(data) {
+      return $.getJSON('../entries-example.json', function(data) {
         var i, result, results, value, _i, _j, _len, _len1, _results;
         results = [];
         for (_i = 0, _len = data.length; _i < _len; _i++) {
