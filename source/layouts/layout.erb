@@ -9,11 +9,9 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= data.page.title || "The Middleman" %></title>
     
-    <link href="/middleman-search-example/stylesheets/normalize.css" media="screen" rel="stylesheet" type="text/css">
-    <link href="/middleman-search-example/stylesheets/all.css" media="screen" rel="stylesheet" type="text/css">
-
+    <%= stylesheet_link_tag "normalize", "all" %>
     <%= javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" %>
-    <script src="/middleman-search-example/javascripts/all.js" type="text/javascript"></script>
+    <%= javascript_include_tag  "all" %>
   </head>
   
   <body class="<%= page_classes %>">
