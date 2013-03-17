@@ -19,8 +19,9 @@ $ ->
           i.value = value
           results.push i
       $('.search-results').html ''
-      if results isnt []
+      if results.length > 0
         for result in results
           $('.search-results').append '<p><a class="copy-bg" href="/'+result.url+'">'+result.title+'</a></p>'
       else
         $('.search-results').append '<p>No results found. Sorry.</p>'
+        return
